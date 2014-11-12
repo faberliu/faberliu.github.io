@@ -3,13 +3,22 @@
 <head>
   <meta charset="utf-8">
   
-  <title>黄瓜蘸酱</title>
+  <title>Golang flag包使用详解(一) | 黄瓜蘸酱</title>
   <meta name="author" content="Faberliu">
+  
+  <meta name="description" content="概述
+flag包提供了一系列解析命令行参数的功能接口
+命令行语法
+命令行语法主要有以下几种形式
+-flag //只支持bool类型
+-flag=x
+-flag x //只支持非bool类型
+以上语法对于一个或两个‘－’号，效果是一样的，但是要注意对于第三种情况，只支持非bool类型，原因是碰到如下情">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  
+  <meta property="og:title" content="Golang flag包使用详解(一)"/>
   <meta property="og:site_name" content="黄瓜蘸酱"/>
 
   
@@ -42,8 +51,7 @@
 </nav>
 <div class="clearfix"></div></header>
   <div id="content" class="inner">
-    <div id="main-col" class="alignleft"><div id="wrapper">
-  <article class="post">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
   
   <div class="post-content">
     <header>
@@ -53,7 +61,7 @@
       
       
   
-    <h1 class="title"><a href="/2014/11/12/Golang-flag包使用详解-一/">Golang flag包使用详解(一)</a></h1>
+    <h1 class="title">Golang flag包使用详解(一)</h1>
   
 
     </header>
@@ -184,6 +192,29 @@ fmt.<span class="keyword">Println</span>(<span class="string">"flagvar has value
       
         
         
+  
+  <div class="tags">
+    <a href="/tags/Golang/">Golang</a>
+  </div>
+
+        
+  <div class="addthis addthis_toolbox addthis_default_style">
+    
+      <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+    
+    
+      <a class="addthis_button_tweet"></a>
+    
+    
+      <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+    
+    
+      <a class="addthis_button_pinterest_pinit" pi:pinit:layout="horizontal"></a>
+    
+    <a class="addthis_counter addthis_pill_style"></a>
+  </div>
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js"></script>
+
       
       <div class="clearfix"></div>
     </footer>
@@ -191,15 +222,49 @@ fmt.<span class="keyword">Println</span>(<span class="string">"flagvar has value
 </article>
 
 
+<nav id="pagination" >
+    
+    
+    <div class="clearfix"></div>
+</nav>
+<section id="comment">
+  <h1 class="title">留言</h1>
 
-
-
-
-<nav id="pagination">
   
+      <div id="fb-root"></div>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=123456789012345";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<div class="fb-comments" data-href="http://yoursite.com/2014/11/12/Golang-flag包使用详解-一/" data-num-posts="5" data-width="840" data-colorscheme="light"></div>
+      
   
-  <div class="clearfix"></div>
-</nav></div></div>
+  <!-- 多说评论框 start -->
+  	<div class="ds-thread" data-thread-key="请将此处替换成文章在你的站点中的ID" data-title="请替换成文章的标题" data-url="请替换成文章的网址"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"faberliu"};
+	(function() {
+	 		var ds = document.createElement('script');
+					ds.type = 'text/javascript';ds.async = true;
+							ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+									ds.charset = 'UTF-8';
+											(document.getElementsByTagName('head')[0] 
+											 		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+												})();
+		</script>
+			<!-- 多说公共JS代码 end -->
+</section>
+
+
+</div></div>
     <aside id="sidebar" class="alignright">
   <div class="search">
   <form action="//google.com/search" method="get" accept-charset="utf-8">
